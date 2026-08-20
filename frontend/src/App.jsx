@@ -63,7 +63,7 @@ function App() {
           console.log("Sending audio to backend...");
 
           const response = await fetch(
-            "http://localhost:5000/api/transcribe",
+            "https://health-voice-ai-backend.onrender.com/api/transcribe",
             {
               method: "POST",
               body: formData,
@@ -95,7 +95,7 @@ function App() {
             console.log("Sending text to AI...");
 
             const aiResponse = await fetch(
-              "http://localhost:5000/api/chat",
+              "https://health-voice-ai-backend.onrender.com/api/chat",
               {
                 method: "POST",
                 headers: {
@@ -130,7 +130,7 @@ function App() {
               console.log("Generating AI voice...");
 
               const speechResponse = await fetch(
-                "http://localhost:5000/api/speak",
+                "https://health-voice-ai-backend.onrender.com/api/speak",
                 {
                   method: "POST",
                   headers: {
@@ -196,7 +196,7 @@ function App() {
 
       try {
         const response = await fetch(
-          "http://localhost:5000/api/report",
+          "https://health-voice-ai-backend.onrender.com/api/report",
           {
             method: "POST",
             headers: {
