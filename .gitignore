@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Build files
+dist/
+
+# Uploaded audio
+backend/uploads/
+
+# Logs
+*.log
+npm-debug.log*
